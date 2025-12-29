@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* navbar */
+.top-bar {
+  background: #0f172a;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+.top-bar .pulse {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+.top-bar .pulse img {
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.pulse h2 {
+  color: #fff;
+}
+.call-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.call-nav button {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.call-nav .menu-icon {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #0f172a;
+  transition: right 0.4s ease;
+  z-index: 999;
+}
+nav.active {
+  right: 0;
+}
+nav .close-icon {
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: right;
+  margin-right: 10px;
+}
+.sign-up {
+  padding: 0 2rem;
+  line-height: 3rem;
+}
+.sign-up a {
+  color: #fff;
+  text-decoration: none;
+}
+.divider {
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  margin: 2rem 0;
+}
+.nav-links {
+  padding: 0 2rem;
+  line-height: 3rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* dashboard */
+.dashboard {
+  padding: 5rem 1rem;
+  background: #475b8a;
+  min-height: 100vh;
+}
+
+/* trending songs & other dashboard components */
+.dash-comps {
+  margin-top: 2.5rem;
+  color: #fff;
+}
+.rows {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+.rows article {
+  padding: 0.5rem 0.5rem 1.5rem;
+}
+.rows article:hover {
+  background: #0f172a;
+  border-radius: 8px;
+}
+.rows img {
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+/* footer links */
+.footer-links {
+  margin-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+.footer-links .links {
+  margin-bottom: 2rem;
+}
+.links li {
+  line-height: 1.5rem;
+  list-style: none;
+}
+.links li a {
+  color: #c7c7c7;
+  text-decoration: none;
+}
+.links li a:hover {
+  text-decoration: underline;
+}
+.links li:first-child {
+  color: #fff;
+  font-weight: 700;
+}
+.socials {
+  border-bottom: 1px solid #818181;
+  display: flex;
+  gap: 1rem;
+}
+.socials img {
+  width: 40px;
+  border-radius: 50%;
+  background: #818181;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+.bottom-links {
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+.bottom-links ul {
+  display: Flex;
+  gap: 1rem;
+}
+.bottom-links ul li {
+  list-style: none;
+}
+.bottom-links ul li a {
+  color: #c7c7c7;
+  text-decoration: none;
+  font-size: 14px;
+}
+.bottom-links ul li a:hover {
+  text-decoration: underline;
+}
+.bottom-links p {
+  color: #c7c7c7;
+}
+.bottom-links button {
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #aaaaaa;
+  color: #fff;
+  font-weight: 700;
+  background: transparent;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.bottom-links button img {
+  width: 16px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+}
+.footer p {
+  color: #c7c7c7;
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer .home {
+  color: #fff;
+}
+.footer img {
+  width: 30px;
+  cursor: pointer;
+}
+.footer .premium img {
+ background: #fff;
+ border-radius: 50%;
+}
+
+/* Library Popup */
+.library-popup {
+  position: fixed;
+  bottom: 6rem;
+
+  border-radius: 8px;
+  background: #2e2;
+  padding: 1rem;
+  margin: 0 .5rem;
+  z-index: 1000;
+}
+.popup-content {
+  color: #fff;
+}
+.popup-content h3 {
+  margin-bottom: 10px;
+}
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.popup-actions button {
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.popup-actions button.primary {
+  background: #fff;
+  color: #2e77d0;
+  font-weight: 700;
+}
+.popup-actions button.ghost {
+  background: transparent;
+  color: #fff;
+}
