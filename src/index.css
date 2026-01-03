@@ -105,6 +105,10 @@ nav .close-icon {
   overflow-x: auto;
   margin-top: 20px;
 }
+.rows a {
+  color: #fff;
+  text-decoration: none;
+}
 .rows article {
   padding: 0.5rem 0.5rem 1.5rem;
 }
@@ -113,7 +117,6 @@ nav .close-icon {
   border-radius: 8px;
 }
 .rows img {
-  background: #fff;
   width: 150px;
   height: 150px;
   border-radius: 8px;
@@ -258,4 +261,61 @@ nav .close-icon {
 .popup-actions button.ghost {
   background: transparent;
   color: #fff;
+}
+
+/* artist details */
+.artist-details {
+  padding: 5rem 1rem;
+  background: #475b8a;
+  color: #fff;
+  min-height: 100vh;
+}
+.artist-image {
+  display: flex;
+  justify-content: center;
+}
+.artist-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.artist-info {
+  margin-top: 20px
+}
+.artist-info h1 {
+  margin-bottom: 10px;
+}
+.artist-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.artist-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.artist-buttons img {
+  width: 25px;
+  cursor: pointer;
+}
+.follow-btn {
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid #aaaaaa;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+.kebab-btn {
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.play-btn img {
+  width: 70px;
+  cursor: pointer;
 }

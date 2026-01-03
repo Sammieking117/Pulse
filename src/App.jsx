@@ -5,6 +5,7 @@ import './index.css';
 import TopBar from './TopBar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import LibraryPopup from './LibraryPopup';
+import ArtistDetails from './ArtistDetails';
 
 function App() {
   const [showLibraryPopup, setShowLibraryPopup] = useState(false);
@@ -21,6 +22,7 @@ function App() {
             )}
         <Routes>
           <Route exact path='/' element={<Dashboard />} />
+          <Route path='/artist/:id' element={<ArtistDetails />} />
         </Routes>
       </Router>
     </div>
