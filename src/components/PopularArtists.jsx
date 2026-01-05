@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { artists } from "./data/artists";
+import { artists } from "../data/artists";
 
 const PopularArtists = () => {
     return ( 

@@ -1,26 +1,25 @@
 import { useParams } from "react-router-dom";
-import { artists } from "./data/artists";
+import { songs } from "../data/songs";
 
-const ArtistDetails = () => {
+const SongDetails = () => {
     const { id } = useParams();
 
-    const artist = artists.find(a => a.id === id);
+    const song = songs.find(a => a.id === id);
 
-    if (!artist) {
-        return <p>Artist not found</p>
+    if (!song) {
+        return <p>Song not found</p>
     }
 
     return ( 
-        <div className="artist-details">
-            <div className="artist-image">
-                <img src={artist.image} alt={artist.name} />
+        <div className="song-details details">
+            <div className="song-image">
+                <img src={song.image} alt={song.name} />
             </div>
-            <div className="artist-info">
-                <h1>{artist.name}</h1>
-                <p>{artist.listeners} monthly listeners</p>
+             <div className="song-info">
+                <h1>{song.name}</h1>
                 <div className="artist-actions">
                     <div className="artist-buttons">
-                        <button className="follow-btn">Follow</button>
+                        <img src="../src/assets/icons/heart.png" />
                         <img src="../src/assets/icons/share.png" />
                         <button className="kebab-btn">⁝</button>
                     </div>
@@ -33,4 +32,4 @@ const ArtistDetails = () => {
      );
 }
  
-export default ArtistDetails;
+export default SongDetails;

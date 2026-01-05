@@ -9,7 +9,7 @@ const Footer = ({ onLibraryClick }) => {
                 <img src="../src/assets/icons/search.png" />
                 <p>Search</p>
             </div>
-            <div className="footer-icon" onClick={onLibraryClick}>
+            <div className="footer-icon library" onClick={onLibraryClick}>
                 <img src="../src/assets/icons/books.png" />
                 <p>Your Library</p>
             </div>
