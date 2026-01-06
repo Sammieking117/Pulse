@@ -8,12 +8,12 @@ const TopBar = () => {
         <>
             <div className="top-bar">
                 <div className="pulse">
-                    <img src="../src/assets/icons/frequency.png" />
+                    <img src="/public/icons/frequency.png" />
                     <h2>Pulse</h2>
                     <div className="nav-comp">
-                         <img src="../src/assets/icons/house.png" className="bar-home" />
+                         <img src="/public/icons/house.png" className="bar-home" />
                          <div className="bar-search">
-                            <img src="../src/assets/icons/search.png" />
+                            <img src="/public/icons/search.png" />
                             <input type="search" placeholder="What do you want to play?" />
                          </div>
                     </div>
