@@ -271,17 +271,18 @@ nav .close-icon {
 
 /* Library Popup */
 .library-popup {
+  display: grid;
+  place-items: center;
   position: fixed;
+  width: 100%;
   bottom: 6rem;
-
-  border-radius: 8px;
-  background: #2e2;
-  padding: 1rem;
-  margin: 0 .5rem;
   z-index: 1000;
 }
 .popup-content {
   color: #fff;
+  background: #2e2;
+  border-radius: 8px;
+  padding: 1rem;
 }
 .popup-content h3 {
   margin-bottom: 10px;
