@@ -13,6 +13,7 @@
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 .top-bar .pulse {
   display: flex;
@@ -116,6 +117,11 @@ nav .close-icon {
   min-height: 100vh;
 }
 
+/* playlist */
+.playlist {
+  display: none;
+}
+
 /* trending songs & other dashboard components */
 .dash-comps {
   margin-top: 2.5rem;
@@ -128,6 +134,9 @@ nav .close-icon {
   display: flex;
   overflow-x: auto;
   margin-top: 20px;
+}
+.rows::-webkit-scrollbar {
+  display: none;
 }
 .rows a {
   color: #fff;
@@ -469,36 +478,47 @@ nav .close-icon {
     justify-content: space-between;
     align-items: center;
   }
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 16px;
+    background: #0f172a;
+    padding-bottom: 2rem;
+  }
+  .trending-songs {
+    margin-top: .5rem;
+  }
+  .rows {
+    overflow-x: scroll;
+  }
+  .playlist {
+    display: block;
+    background: #2e77d0;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 5rem;
+    height: 100vh;
+  }
+  .playlist p {
+    margin: 10px 0;
+  }
+  .playlist button {
+    padding: 8px;
+    font-weight: 700;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 0 10px #0f172a;
+  }
+  .playlist button:hover {
+    filter: brightness(0.9);
+  }
+  .comp-B {
+    overflow: hidden;
+    background: #2e77d0;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 0;
+  }
 }
-/*
-@media screen and (min-width: 1024px) {
-  .navbar nav {
-    position: fixed;
-  }
-  .navbar nav ul {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0;
-  }
-  .navbar nav ul li {
-    margin: 0;
-  }
-  .navbar nav ul li a {
-    color: var(--neutral-color);
-    font-weight: 600;
-  }
-  .navbar nav ul li a:hover {
-    background: #475569;
-  }
-  .menu-icon {
-    display: none;
-  }
-  .form-action {
-    margin: 30px auto 0;
-    width: 50%;
-  }
-  form {
-   width: 50%;
-   margin: 0 auto;
-  }
-} */
