@@ -34,9 +34,9 @@ const FooterLinks = () => {
                     <li><Link>Pulse Free</Link></li>
                 </ul>
                 <div className="socials">
-                    <img src="/public/icons/instagram (1).png" />
-                    <img src="/public/icons/twitter (1).png" />
-                    <img src="/public/icons/facebook (2).png" />
+                    <img src="/icons/instagram (1).png" />
+                    <img src="/icons/twitter (1).png" />
+                    <img src="/icons/facebook (2).png" />
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ const FooterLinks = () => {
                     <li><Link>Accessibilty</Link></li>
                 </ul>
                 <p>&copy; 2026 Pulse</p>
-                <button><img src="/public/icons/world.png" /> English</button>
+                <button><img src="/icons/world.png" /> English</button>
             </div>
         </div>
      );
