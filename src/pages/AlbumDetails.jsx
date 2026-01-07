@@ -19,12 +19,12 @@ const AlbumDetails = () => {
                 <h1>{album.name}</h1>
                 <div className="artist-actions">
                     <div className="artist-buttons">
-                        <img src="../src/assets/icons/heart.png" />
-                        <img src="../src/assets/icons/share.png" />
+                        <img src="/icons/heart.png" />
+                        <img src="/icons/share.png" />
                         <button className="kebab-btn">⁝</button>
                     </div>
                     <div className="play-btn">
-                        <img src="../src/assets/icons/play-button.png" />
+                        <img src="/icons/play-button.png" />
                     </div>
                 </div>
             </div>

@@ -21,11 +21,11 @@ const ArtistDetails = () => {
                 <div className="artist-actions">
                     <div className="artist-buttons">
                         <button className="follow-btn">Follow</button>
-                        <img src="../src/assets/icons/share.png" />
+                        <img src="/icons/share.png" />
                         <button className="kebab-btn">⁝</button>
                     </div>
                     <div className="play-btn">
-                        <img src="../src/assets/icons/play-button.png" />
+                        <img src="/icons/play-button.png" />
                     </div>
                 </div>
             </div>
